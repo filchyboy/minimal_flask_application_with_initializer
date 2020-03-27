@@ -2,7 +2,7 @@
 Base code for application
 '''
 # import flask module
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app():
@@ -11,5 +11,5 @@ def create_app():
     
     @app.route('/')
     def root():
-        return('Hello world from within an initialized application. Repo <a href="https://github.com/filchyboy/minimal_flask_application_with_initializer">here</a>.')
+        return render_template("home.html")
     return app
