@@ -1,0 +1,2 @@
+# minimal_flask_application_with_initializer
+A minimal flask application with initializer
